@@ -74,6 +74,11 @@ body {
 	background: rgb(255, 149, 1, 0.8);
 }
 
+img {
+    height: 1em;
+    width: 1.2em;
+}
+
 @keyframes ripple {
 	to {
 		transform: scale(0.95);
@@ -84,16 +89,15 @@ body {
 	animation: ripple 0.1s;
 }
 
-/*Rever isso depois*/
 #zero {
 	width: 9.2rem;
-	border-radius: 0 50px 50px 0;
-	border-top-right-radius: 50px;
-	border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
 	border-bottom-right-radius: 50px;
-	border-top-left-radius: 50px;
 }
 
+/*Rever isso depois*/
 .display-cover {
 	width: 19.2rem;
 	height: 3rem;
