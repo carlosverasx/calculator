@@ -84,3 +84,62 @@ body {
 	animation: ripple 0.1s;
 }
 
+/*Rever isso depois*/
+#zero {
+	width: 9.2rem;
+	border-radius: 0 50px 50px 0;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	border-top-left-radius: 50px;
+}
+
+.display-cover {
+	width: 19.2rem;
+	height: 3rem;
+	margin: 0 0.4rem 1.5rem 0.4rem;
+	text-align: right;
+	font-size: 3rem;
+
+	padding-bottom: 0.5rem;
+	overflow-y: hidden;
+	overflow-x: scroll;
+
+	scroll-snap-type: x mandatory;
+}
+
+.display {
+	height: 3rem;
+	display: inline-block;
+	scroll-snap-align: end;
+}
+
+.output {
+	width: 19.2rem;
+	height: 2rem;
+	margin: 0 0.4rem 1.5rem 0.4rem;
+	text-align: right;
+	font-size: 2rem;
+
+	padding-bottom: 0.5rem;
+	overflow-y: hidden;
+	overflow-x: scroll;
+}
+
+/*até aqui*/
+
+.display-cover::-webkit-scrollbar,
+.output::-webkit-scrollbar {
+	width: 19.2rem;
+	height: 0.2rem;
+}
+::-webkit-scrollbar-track {
+	background: black;
+}
+::-webkit-scrollbar-thumb {
+	background: #333333;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #a6a6a6;
+}
+
