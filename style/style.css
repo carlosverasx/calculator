@@ -73,3 +73,14 @@ body {
 .yellow:hover {
 	background: rgb(255, 149, 1, 0.8);
 }
+
+@keyframes ripple {
+	to {
+		transform: scale(0.95);
+	}
+}
+
+.click-effect {
+	animation: ripple 0.1s;
+}
+
