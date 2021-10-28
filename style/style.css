@@ -1,23 +1,17 @@
 * {
+    box-sizing: border-box;
     margin: 0;
-    border: 0;
     padding: 0;
-
     user-select: none;
-}
-
-div {
-    display: block;
 }
 
 body {
     height: 100vh;
     background: #FE973A url(/images/noise.png);
-    
     display: flex;
     align-items: center;
     justify-content: center;
-
+    flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     color: #f8f8f8;
@@ -26,37 +20,37 @@ body {
 .container {
     background-color: #000;
     box-shadow: 0 0 10px 0.5px #000000d7;
-    padding: 1rem;
     border-radius: 10px;
+    padding: 1rem;
 }
 
 .display {
-	display: inline-block;
-	scroll-snap-align: end;
+    height: 115px;
+    width: 17rem;
+    margin:  0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+    overflow: hidden;
+    z-index: 1;
+    transition: color .6s ease-in-out;
 }
 
-.display-cover {
-    text-align: right;
-	font-size: 2rem;
-	overflow-y: hidden;
-	overflow-x: hidden;
-
-	scroll-snap-type: x mandatory;
+.displayCover {
+    font-size: 3rem;
+    margin: 10px;
 }
 
 .output {
+    font-size: 2rem;
     text-align: right;
-	font-size: 1.5rem;
-	overflow-y: hidden;
-	overflow-x: scroll;
+    margin: 0 10px 0 10px;
 }
 
-tr {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    cursor: pointer;
+table {
+    padding: 1rem;
 }
 
 td {
@@ -64,14 +58,17 @@ td {
 }
 
 button {
-    background-color: #ff9501;
     color: #f8f8f8;
 
-    width: 2rem;
-    height: 2rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
+    font-size: 1.5rem;
 
     font-weight: 600;
+    cursor: pointer;
+
+    border: none;
 }
 
 .light-grey {
@@ -99,68 +96,21 @@ button {
 	background: rgb(255, 149, 1, 0.8);
 }
 
-#zero {
-    width: 4.5rem;
+#number0 {
+    width: 8.5rem;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
 	border-bottom-right-radius: 50px;
 }
 
-#backspace {
-    border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 2px;
-    position: relative;
-}
 
-.body {
-    width: 0.95rem;
-    height: 0.6rem;
-    border-radius: 0.7px 2px 2px 0.7px;
-    background-color: #fff;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.line {
-    width: 0.9rem;
-    height: 0.6rem;
-    position: relative;
-    margin-left: -1px;
-}
-
-.line-left, .line-right {
-    width: 0.15rem;
-    height: 0.5rem;
-    background-color: #FE973A;
-    border-radius: 50px;
-    position: absolute;
-}
-
-.line-left {
-    transform: rotate(45deg);
-
-}
-
-.line-right {
-    transform: rotate(-45deg);
-}
-
-.arrow {
-    border-color: #fff transparent transparent #fff;
-    border-style: solid;
-    border-width: 0.22rem;
-    content: "";
-    position: absolute;
-    transform: rotate(-45deg);
-    margin-right:  0.92rem;
+img {
+    width: 1.7rem;
+    height: 1.7rem;
+    margin:  0 auto;
+    margin-top: 0.5rem;
 }
 
 .click-effect {

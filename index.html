@@ -1,61 +1,53 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/style.css">
-    <title>CalculatorJS</title>
+    <title>Calculator</title>
 </head>
 <body>
     <div class="container">
-        <div class="display-cover">
-            <div class="display">0</div>
-        </div>
-
-        <div class="output"></div>
-
+        <header class= "display" >
+            <div class="displayCover" id="displayCover"></div>
+            <div class="output" id="output"></div>
+        </header>
         <table>
-            <tr>
-                <td><button class="light-grey clear click-effect">AC</button></td>
-                <td><button class="light-grey plus-minus click-effect">+/-</button></td>
-                <td><button class="light-grey operators click-effect">÷</button></td>
-                <td><button class="yellow backspace click-effect"><!--<img src="images/backspace.png" alt="">-->
-                <div id="backspace">
-                    <div class="body">
-                        <div class="line line-left"></div>
-                        <div class="line line-right"></div>
-                    </div>
-                    <div class="arrow"></div>
-                </div></button></td>
-            </tr>
-
-            <tr>
-                <td><button class="dark-grey numbers click-effect">7</button></td>
-                <td><button class="dark-grey numbers click-effect">8</button></td>
-                <td><button class="dark-grey numbers click-effect">9</button></td>
-                <td><button class="yellow operators click-effect">x</button></td>
-            </tr>
-            <tr>
-                <td><button class="dark-grey numbers click-effect">4</div></td>
-                <td><button class="dark-grey numbers click-effect">5</button></td>
-                <td><button class="dark-grey numbers click-effect">6</button></td>
-                <td><button class="yellow operators click-effect">-</button></td>
-            </tr>
-            <tr>
-                <td><button class="dark-grey numbers click-effect">1</button></td>
-                <td><button class="dark-grey numbers click-effect">2</button></td>
-                <td><button class="dark-grey numbers click-effect">3</button></td>
-                <td><button class="yellow operators click-effect">+</button></td>
-            </tr>
-            <tr>
-                <td><button class="dark-grey numbers click-effect" id="zero">0</button></td>
-                <td><button class="dark-grey dot click-effect">.</button></td>
-                <td><button class="yellow equalto click-effect">=</button></td>
-            </tr>
+            <tbody>
+                <tr>
+                    <td><button class="light-grey clear click-effect" id="clear">AC</button></td>
+                    <td><button class="light-grey plus-minus click-effect" id="plusMinus">+/-</button></td>
+                    <td><button class="light-grey operators click-effect" id="operatorsDivision">÷</button></td>
+                    <td><button class="yellow backspace click-effect" id="backspace"><img src="images/backspace.png" alt=""></button></td>
+                </tr>
+                <tr>
+                    <td><button class="dark-grey numbers click-effect" id="number7">7</button></td>
+                    <td><button class="dark-grey numbers click-effect" id="number8">8</button></td>
+                    <td><button class="dark-grey numbers click-effect" id="number9">9</button></td>
+                    <td><button class="yellow operators click-effect" id="operatorsMultiplication">x</button></td>
+                </tr>
+                <tr>
+                    <td><button class="dark-grey numbers click-effect" id="number4">4</button></td>
+                    <td><button class="dark-grey numbers click-effect" id="number5">5</button></td>
+                    <td><button class="dark-grey numbers click-effect" id="number6">6</button></td>
+                    <td><button class="yellow operators click-effect" id="operatorsMinus">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="dark-grey numbers click-effect" id="number1">1</button></td>
+                    <td><button class="dark-grey numbers click-effect" id="number2">2</button></td>
+                    <td><button class="dark-grey numbers click-effect" id="number3">3</button></td>
+                    <td><button class="yellow operators click-effect" id="operatorsPlus">+</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="dark-grey numbers click-effect" id="number0">0</button></td>
+                    <td><button class="dark-grey dot click-effect" id="dot">.</button></td>
+                    <td><button class="yellow equalto click-effect" id="equalto">=</button></td>
+                </tr>
+            </tbody>
         </table>
     </div>
 
-    <script src="/script/script.js"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>
