@@ -107,6 +107,62 @@ button {
 	border-bottom-right-radius: 50px;
 }
 
+#backspace {
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2px;
+    position: relative;
+}
+
+.body {
+    width: 0.9rem;
+    height: 0.6rem;
+    border-radius: 0.7px 2px 2px 0.7px;
+    background-color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    width: 0.9rem;
+    height: 0.6rem;
+    position: relative;
+    margin-left: -1px;
+}
+
+.line-left, .line-right {
+    width: 0.15rem;
+    height: 0.5rem;
+    background-color: #FE973A;
+    border-radius: 50px;
+    position: absolute;
+}
+
+.line-left {
+    transform: rotate(45deg);
+
+}
+
+.line-right {
+    transform: rotate(-45deg);
+}
+
+.arrow {
+    border-color: #fff transparent transparent #fff;
+    border-style: solid;
+    border-width: 0.2rem;
+    content: "";
+    position: absolute;
+    transform: rotate(-45deg);
+    margin-right:  0.89rem;
+}
+
 .display-cover::-webkit-scrollbar,
 .output::-webkit-scrollbar {
 	width: 1rem;
