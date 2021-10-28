@@ -119,7 +119,7 @@ button {
 }
 
 .body {
-    width: 0.9rem;
+    width: 0.95rem;
     height: 0.6rem;
     border-radius: 0.7px 2px 2px 0.7px;
     background-color: #fff;
@@ -156,12 +156,40 @@ button {
 .arrow {
     border-color: #fff transparent transparent #fff;
     border-style: solid;
-    border-width: 0.2rem;
+    border-width: 0.22rem;
     content: "";
     position: absolute;
     transform: rotate(-45deg);
-    margin-right:  0.89rem;
+    margin-right:  0.92rem;
 }
+
+.click-effect {
+	animation: pulse 1s;
+}
+
+@keyframes pulse {
+	to {
+		transform: scale(0.95);
+	}
+}
+
+@-webkit-keyframes pulse {
+	to {
+		transform: scale(0.95);
+	}
+}
+
+@-moz-keyframes pulse {
+    to {
+		transform: scale(0.95);
+	}
+}
+@-ms-keyframes pulse {
+    to {
+		transform: scale(0.95);
+	}
+}
+
 
 .display-cover::-webkit-scrollbar,
 .output::-webkit-scrollbar {
